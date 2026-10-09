@@ -1,0 +1,132 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #25331f;
+
+  background-image:
+    linear-gradient(rgba(239, 247, 232, 0.72), rgba(239, 247, 232, 0.72)),
+    url("https://25.media.tumblr.com/45cb09ef096fba330830e68198c9349b/tumblr_mh9qatRKJo1ro0c29o1_500.gif");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+#wrapper {
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+
+  padding: 25px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 8px 24px rgba(25, 46, 20, 0.28);
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+  color: #365c2d;
+}
+
+
+#borderimg {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  background-color: #244b36;
+  color: #ffffff;
+
+  border-radius: 10px;
+}
+
+#borderimg h2 {
+  margin-top: 0;
+  color: #f7e7a8;
+}
+
+
+.video game-photo {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+
+.specialborder {
+  border: 18px solid transparent;
+  border-image-source:
+    repeating-linear-gradient(
+      45deg,
+      #6b3d1f 0 10px,
+      #d8ad57 10px 20px,
+      #355f37 20px 30px,
+      #f4e1a1 30px 40px
+    );
+  border-image-slice: 18;
+  border-image-repeat: round;
+}
+
+
+main {
+  padding: 25px;
+  background-color: #fffdf4;
+}
+
+main h2 {
+  margin-top: 0;
+  color: #365c2d;
+}
+
+
+ul {
+  margin: 20px 0;
+  padding: 20px 20px 20px 48px;
+  background-color: #eef5e8;
+
+  list-style-image: url("https://media.tenor.com/pBiAlthddHkAAAAM/pikachu-nintendo-switch-pokemon.gif");
+}
+
+
+li {
+  margin: 12px 0;
+  padding-left: 6px;
+  line-height: 1.4;
+}
+
+footer {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #4f5d48;
+}
+
+
+@media (max-width: 800px) {
+  #wrapper {
+    width: 90%;
+    margin-top: 15px;
+    padding: 16px;
+  }
+
+  .video game-photo {
+    height: 300px;
+  }
+}
