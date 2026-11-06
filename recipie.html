@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Recipe: Caprese Toast</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 16px;
+      background: #f6f2e9;
+      color: #29352a;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+      color: #315b37;
+      font-family: Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    header p {
+      margin: 0;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 28px #29352a15;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    caption {
+      padding: 16px;
+      background: #e6eddf;
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      padding: 16px;
+      border-bottom: 1px solid #e3e6dd;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    thead th {
+      background: #315b37;
+      color: white;
+    }
+
+    tbody th {
+      font-weight: normal;
+    }
+
+    /* Every ingredient picture has exactly the same dimensions. */
+    .ingredient-picture {
+      display: block;
+      width: 96px;
+      height: 96px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: #f6f2e9;
+    }
+
+    .dish-cell {
+      background: #fffcf5;
+      text-align: center;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    .finished-dish {
+      display: block;
+      width: 100%;
+      max-width: 480px;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 12px;
+    }
+
+    figcaption {
+      margin-top: 12px;
+      color: #52604e;
+      font-style: italic;
+    }
+
+    .instructions {
+      padding: 24px;
+      background: #edf3e7;
+    }
+
+    .instructions h2 {
+      margin-top: 0;
+      color: #315b37;
+    }
+
+    .instructions ol {
+      margin-bottom: 0;
+      padding-left: 24px;
+    }
+
+    .instructions li + li {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 480px) {
+      th,
+      td {
+        padding: 10px;
+      }
+
+      .ingredient-picture {
+        width: 72px;
+        height: 72px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1> home-made cinnamon roll</h1>
+      <p> a yummy cinnamon breakfast item</p>
+    </header>
+
+    <div class="table-container">
+      <table>
+        <caption>Ingredients for the serving</caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Ingredient Name</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Picture of Ingredient</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- The finished dish naturally introduces the recipe. -->
+          <tr>
+            <td colspan="3" class="dish-cell">
+              <figure>
+                <img
+                  class="finished-dish"
+                  alt="Illustration of cinnamon roll in a tray"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1UNyentiVn3xxumZmS5BxV7VBD-DCVCEMAacUWEtTA&s=10' viewBox='0 0 480 260'%3E%3Crect width='480' height='260' fill='%23f3ead9'/%3E%3Cellipse cx='240' cy='140' rx='190' ry='100' fill='%23ffffff'/%3E%3Cellipse cx='240' cy='140' rx='165' ry='80' fill='%23eef0e8'/%3E%3Crect x='120' y='65' width='240' height='145' rx='35' fill='%23935b2e' transform='rotate(-8 240 135)'/%3E%3Crect x='130' y='75' width='220' height='125' rx='28' fill='%23e8b969' transform='rotate(-8 240 135)'/%3E%3Cg fill='%23fff8df'%3E%3Cellipse cx='185' cy='120' rx='42' ry='30'/%3E%3Cellipse cx='255' cy='110' rx='42' ry='30'/%3E%3Cellipse cx='285' cy='155' rx='42' ry='30'/%3E%3Cellipse cx='210' cy='165' rx='42' ry='26'/%3E%3C/g%3E%3Cg fill='%23df4c3e' stroke='%23b9332d' stroke-width='4'%3E%3Ccircle cx='185' cy='118' r='26'/%3E%3Ccircle cx='255' cy='110' r='26'/%3E%3Ccircle cx='285' cy='155' r='26'/%3E%3Ccircle cx='210' cy='165' r='24'/%3E%3C/g%3E%3Cg fill='%233e8041'%3E%3Cellipse cx='215' cy='113' rx='12' ry='27' transform='rotate(40 215 113)'/%3E%3Cellipse cx='255' cy='157' rx='12' ry='27' transform='rotate(-35 255 157)'/%3E%3Cellipse cx='176' cy='159' rx='11' ry='23' transform='rotate(-30 176 159)'/%3E%3C/g%3E%3C/svg%3E"
+                >
+                <figcaption> yummy cinnamon bread roll.</figcaption>
+              </figure>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">bread flour</th>
+            <td> big white-like dirt and 4 1/2 to 5 cups of it</td>
+            <td>
+              <img
+                class="ingredient-picture"
+                alt="Illustration of bread flour"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWgGjukggoF7j4O6bk6VVg1I1p2JOaGPJHCgXznwHUQQ&s=10"
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">granulated sugar</th>
+            <td> another white-like dirt and 2 1/3 cup of it and 1 teaspoon for the yeast </td>
+            <td>
+              <img
+                class="ingredient-picture"
+                alt="Illustration of granulated sugar"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZbCUUJscoRk7kn9Dck5xIR4IfeXCSgTiA__NQ0tCPtQ&s"
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row"> salt</th>
+            <td> another white-like dirt and 1 tablespoon of it</td>
+            <td>
+              <img
+                class="ingredient-picture"
+                alt="Illustration of salt"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_nMH_0Bx9Z_teEE7Do2jzB0wZ4h5JQggWF7P6d2kpuQ&s=10"
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row"> milk</th>
+            <td> a white liquid item that comes from cows and 1 cup of whole milk and warmed to about 105 fahrenheit- 115 fahrenheit </td>
+            <td>
+              <img
+                class="ingredient-picture"
+                alt="Illustration of milk"
+                src="https://i5.walmartimages.com/seo/Great-Value-Whole-Vitamin-D-Milk-Gallon-Plastic-Jug-128-Fl-Oz_6a7b09b4-f51d-4bea-a01c-85767f1b481a.86876244397d83ce6cdedb030abe6e4a.jpeg"
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row"> instant yeast</th>
+            <td> a sand like substance and 2 1/4 of it</td>
+            <td>
+              <img
+                class="ingredient-picture"
+                alt="Illustration of instant yeast"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-vQF83XU-i7pXcvdYNC5-tZzEryJl6wF8Ew9l-K6Epg&s=10"
+              >
+            </td>
+          </tr>
+
+<tr>
+            <th scope="row"> eggs</th>
+            <td> an oval shaped item that comes from chickens and it use 2 large egg at room temperature</td>
+            <td>
+              <img
+                class="ingredient-picture"
+                alt="Illustration of eggs"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwbSZduJXNmNb4xOkE73RV3t5YGetPhNDnctLdkfLBwQ&s=10"
+              >
+            </td>
+          </tr>
+		  
+		  <tr>
+            <th scope="row">butter</th>
+            <td> a slipery yellow item that comes from the milk of cows and 1/3 cup of un-salted and melted butter for the dough,filling, and cream cheese frosting but for filling it is softened to room temperature and the creamcheese frosting is also softend</td>
+            <td>
+              <img
+                class="ingredient-picture"
+                alt="Illustration of butter"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQng9cieQzjhQXQ0Ll0V6hj4tObO4IdGEYvXOiD5UC9Gw&s=10"
+              >
+            </td>
+          </tr>
+		  
+		    <tr>
+            <th scope="row">brown sugar</th>
+            <td> a wet sand like item and 1 cup packed of it</td>
+            <td>
+              <img
+                class="ingredient-picture"
+                alt="Illustration of brown sugar"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpgJijCBn1o1DFIJPW5MKG1LfRXZmSexmZ2JJqWVV93Q&s=10"
+              >
+            </td>
+          </tr>
+		  
+		   <tr>
+            <th scope="row"> ground cinnamon</th>
+            <td> desert sand like item amd 2 1/2 tablespoon of it</td>
+            <td>
+              <img
+                class="ingredient-picture"
+                alt="Illustration of ground cinnamon"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHGSq4HeJgjwY1-f_sSIrckxFWP16Rp1nhTH4BhM0FSTf8jntggh7XLgE&s=10"
+              >
+            </td>
+          </tr>
+		  
+		  <tr>
+            <th scope="row"> cream cheese</th>
+            <td> a liquidy wip cream substance and 4 oz and softend of it </td>
+            <td>
+              <img
+                class="ingredient-picture"
+                alt="Illustration of cream cheese"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS91uccXnV-JdvwVGEgsg6-uU8RaVEmWgAo1LTFzQ2mmw&s=10"
+              >
+            </td>
+          </tr>
+		  
+		   <tr>
+            <th scope="row"> powered sugar</th>
+            <td> another white like dirt and 1 1/2 cups of it </td>
+            <td>
+              <img
+                class="ingredient-picture"
+                alt="Illustration of powered sugar"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgN1D8SuNv3ZIdzn52tdxu05fgaRHpc43qSroSl5tJqA&s=10"
+              >
+            </td>
+          </tr>
+		  
+		    <tr>
+            <th scope="row"> vanilla extract</th>
+            <td> a surup like substance and 1 teaspoon of it </td>
+            <td>
+              <img
+                class="ingredient-picture"
+                alt="Illustration of vanilla extract"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtxHAx3tS1D9PalQssKmAR-EYXOYqZk9gCIxIaNN6ACw&s=10"
+              >
+            </td>
+          </tr>
+		  
+          <!-- This instructions cell spans all three columns. -->
+          <tr>
+            <td colspan="3" class="instructions">
+              <h2>Instructions</h2>
+              <ol>
+                <li>Proof the Yeast: In a large bowl or stand mixer bowl, combine the warm milk, 1 teaspoon of granulated sugar, and the yeast. Let it sit for 5 to 10 minutes until it becomes frothy.</li>
+                <li>Make the Dough: Add the remaining granulated sugar, melted butter, salt, eggs, and about 4 ½ cups of the flour to the yeast mixture. Mix with a dough hook attachment (or stir with a wooden spoon) until a dough forms.</li>
+                <li>Knead: Knead the dough for 5–8 minutes until it is smooth, elastic, and slightly tacky. If it is too sticky, add the remaining flour a little at a time.</li>
+                <li>First Rise: Place the dough in a greased bowl, cover with a warm towel or plastic wrap, and let it rise in a warm spot for about 1 to 1.5 hours, or until doubled in size.</li>
+                <li>Roll and Fill: Punch down the dough and turn it out onto a lightly floured surface. Roll it out into a large rectangle (roughly 12x18 inches). Spread the softened filling butter evenly over the dough, leaving a small border. In a small bowl, mix the brown sugar and cinnamon, then sprinkle it evenly over the butter, pressing it down gently.</li>
+              <li> Slice and Shape: Roll the dough up tightly from the long edge into a log, then cut it into 12 equal slices using a sharp knife or unflavored dental floss. Place the rolls in a greased 9x13-inch baking pan. </li>
+			  <li> Second Rise: Cover the pan and let the rolls rise a second time for 30 to 45 minutes until puffy. </li>
+			  <li> Bake: Preheat your oven to 375°F (190°C). Bake the rolls for 20 to 25 minutes until they are golden brown on top.
+              <li> Frost: While the rolls cool slightly, beat the cream cheese, butter, powdered sugar, and vanilla together until smooth. Spread or drizzle the frosting over the warm rolls. </li>
+			  </ol>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
