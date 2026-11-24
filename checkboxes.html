@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> movie survey</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem 1rem;
+      background: #f1f6f0;
+      color: #24352a;
+      font: 16px/1.5 Arial, sans-serif;
+    }
+
+    main {
+      max-width: 620px;
+      margin: auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px #24352a1a;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #286344;
+    }
+
+    .form-row {
+      margin-bottom: 1.2rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.65rem;
+      border: 1px solid #aab8ae;
+      border-radius: 6px;
+      font: inherit;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    fieldset {
+      margin: 0 0 1.2rem;
+      padding: 1rem;
+      border: 1px solid #aab8ae;
+      border-radius: 6px;
+    }
+
+    legend {
+      padding: 0 0.4rem;
+      font-weight: 700;
+      color: #286344;
+    }
+
+    fieldset label {
+      margin: 0.35rem 0;
+      font-weight: 400;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    button {
+      padding: 0.7rem 1.1rem;
+      border: 0;
+      border-radius: 6px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    button[type="submit"] {
+      background: #286344;
+      color: white;
+    }
+
+    button[type="reset"] {
+      background: #e5ebe6;
+      color: #24352a;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>movies</h1>
+    <p>Tell us how you’d like to enjoy movies</p>
+
+    <form action="#" method="post">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="ideas"> do you like movies</label>
+        <textarea id="ideas" name="ideas" cols="60" rows="3"></textarea>
+      </div>
+
+      <fieldset>
+        <legend> where do normaly watch movies</legend>
+        <label><input type="radio" name="where" value="movie theater"> movie theater</label>
+        <label><input type="radio" name="where" value="at home"> at home</label>
+        <label><input type="radio" name="where" value="friends house"> friends house</label>
+		<label><input type="radio" name="where" value="both 1 and 2"> both 1 and 2</label>
+		<label><input type="radio" name="where" value="both 1 and 3"> both 1 and 3</label>
+		<label><input type="radio" name="where" value="both 2 and 3"> both 2 and 3</label>
+		<label><input type="radio" name="where" value="other"> other</label>
+      </fieldset>
+
+      <fieldset>
+        <legend> of these movies which one is your favorite</legend>
+        <label><input type="checkbox" name="favorite" value="super mario galaxy movie"> super mario galaxy movie</label>
+        <label><input type="checkbox" name="favorite" value=" super mario movie"> super mario movie</label>
+        <label><input type="checkbox" name="favorite" value="kpop demon hunters"> kpop demon hunter</label>
+		<label><input type="checkbox" name="favorite" value="avengers endgame"> avengers endgame</label>
+		<label><input type="checkbox" name="favorite" value=" the dark knight"> the dark knight</label>
+		  <label><input type="checkbox" name="favorite" value=" toy story 1"> toy story 1</label>
+      </fieldset>
+
+      <div class="form-row">
+        <label for="movie snacks">Favorite movie snacks</label>
+        <select id=" movie snacks" name=" movie snacks" size="3">
+          <option value="popcorn">popcorn</option>
+          <option value="candy">candy</option>
+          <option value="chips"> chips</option>
+          <option value=" cookies"> cookies</option>
+        </select>
+      </div>
+
+      <div class="buttons">
+        <button type="submit">Submit survey</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
