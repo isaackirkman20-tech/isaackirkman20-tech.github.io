@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visitor Form</title>
+</head>
+<body>
+  <h1>Visitor Form</h1>
+
+  <form action="http://webdevbasics.net/scripts/demo.php" method="post">
+    <label for="user">User name:</label>
+    <input type="text" id="user" name="user" maxlength="30">
+    <br><br>
+
+    <fieldset>
+      <legend>Favorite Month</legend>
+      <label><input type="radio" name="month" value="January"> January</label>
+      <label><input type="radio" name="month" value="February"> February</label>
+      <label><input type="radio" name="month" value="March"> March</label>
+      <label><input type="radio" name="month" value="April"> April</label>
+      <label><input type="radio" name="month" value="May"> May</label>
+      <label><input type="radio" name="month" value="June"> June</label>
+      <label><input type="radio" name="month" value="July"> July</label>
+      <label><input type="radio" name="month" value="August"> August</label>
+      <label><input type="radio" name="month" value="September"> September</label>
+      <label><input type="radio" name="month" value="October"> October</label>
+      <label><input type="radio" name="month" value="November"> November</label>
+      <label><input type="radio" name="month" value="December"> December</label>
+    </fieldset>
+    <br>
+
+    <label for="social">Favorite social networking site:</label>
+    <select id="social" name="social">
+      <option value="">Select one</option>
+      <option value="Facebook">Facebook</option>
+      <option value="Instagram">Instagram</option>
+      <option value="LinkedIn">LinkedIn</option>
+      <option value="TikTok">TikTok</option>
+      <option value="X">X</option>
+    </select>
+
+    <fieldset>
+      <legend>Shipping Address</legend>
+      <label for="AddressLine1">AddressLine1:</label>
+      <input type="text" id="AddressLine1" name="AddressLine1"><br>
+
+      <label for="AddressLine2">AddressLine2:</label>
+      <input type="text" id="AddressLine2" name="AddressLine2"><br>
+
+      <label for="City">City:</label>
+      <input type="text" id="City" name="City"><br>
+
+      <label for="State">State:</label>
+      <input type="text" id="State" name="State"><br>
+
+      <label for="ZIP">ZIP:</label>
+      <input type="text" id="ZIP" name="ZIP">
+    </fieldset>
+    <br>
+
+    <label for="pword">Password:</label>
+    <input type="password" id="pword" name="pword">
+    <input type="hidden" name="userid" value="">
+
+    <br><br>
+    <input type="image" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS_pyFf_0AkPTSAypzG-bbc58lFpbgUdlqpgvwy5aVow&s=10" alt="Submit">
+  </form>
+     <a href="table 2.html"> back to home page</a>
+</body>
+</html>
